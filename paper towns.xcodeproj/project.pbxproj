@@ -12,6 +12,8 @@
 		E5E8B96B219E1FBE00C02B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8B969219E1FBE00C02B77 /* Main.storyboard */; };
 		E5E8B96D219E1FC000C02B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E8B96C219E1FC000C02B77 /* Assets.xcassets */; };
 		E5E8B970219E1FC000C02B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E8B96E219E1FC000C02B77 /* LaunchScreen.storyboard */; };
+		E5E8B979219E218700C02B77 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E8B978219E218700C02B77 /* MapKit.framework */; };
+		E5E8B97B219E226100C02B77 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E8B97A219E226100C02B77 /* Capital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E5E8B96C219E1FC000C02B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E8B96F219E1FC000C02B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5E8B971219E1FC000C02B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E8B978219E218700C02B77 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E5E8B97A219E226100C02B77 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E8B979219E218700C02B77 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				E5E8B964219E1FBE00C02B77 /* paper towns */,
 				E5E8B963219E1FBE00C02B77 /* Products */,
+				E5E8B977219E218700C02B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				E5E8B965219E1FBE00C02B77 /* AppDelegate.swift */,
 				E5E8B967219E1FBE00C02B77 /* ViewController.swift */,
+				E5E8B97A219E226100C02B77 /* Capital.swift */,
 				E5E8B969219E1FBE00C02B77 /* Main.storyboard */,
 				E5E8B96C219E1FC000C02B77 /* Assets.xcassets */,
 				E5E8B96E219E1FC000C02B77 /* LaunchScreen.storyboard */,
 				E5E8B971219E1FC000C02B77 /* Info.plist */,
 			);
 			path = "paper towns";
+			sourceTree = "<group>";
+		};
+		E5E8B977219E218700C02B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5E8B978219E218700C02B77 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,11 @@
 				TargetAttributes = {
 					E5E8B961219E1FBE00C02B77 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,6 +157,7 @@
 			files = (
 				E5E8B968219E1FBE00C02B77 /* ViewController.swift in Sources */,
 				E5E8B966219E1FBE00C02B77 /* AppDelegate.swift in Sources */,
+				E5E8B97B219E226100C02B77 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
